@@ -1,0 +1,3 @@
+This repository demonstrates a subtle bug in Lua related to handling nil values in function arguments. The `foo` function attempts to handle the case where `x` is nil, but this check only works if `nil` is explicitly passed as an argument. Calling the function without any arguments leads to an error because the implicit nil is not correctly handled.
+
+The bugSolution.lua file provides a corrected version of the function that properly handles cases where zero or one arguments are passed.
